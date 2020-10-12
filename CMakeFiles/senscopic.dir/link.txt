@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsenscopic.a  CMakeFiles/senscopic.dir/src/dumpTool.cpp.o CMakeFiles/senscopic.dir/src/hid.c.o CMakeFiles/senscopic.dir/src/uvc_interface.cpp.o
+/usr/bin/ranlib libsenscopic.a

@@ -1,0 +1,4 @@
+/home/fender/senscopic_sdk/CMakeFiles/rebuild_cache.dir
+/home/fender/senscopic_sdk/CMakeFiles/senscopic.dir
+/home/fender/senscopic_sdk/CMakeFiles/edit_cache.dir
+/home/fender/senscopic_sdk/CMakeFiles/camtest.dir

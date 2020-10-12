@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/fender/senscopic_sdk",
+  "command": "/usr/bin/c++   -I/home/fender/senscopic_sdk/src -I/home/fender/senscopic_sdk/3rdparty/jsoncpp/include -I/usr/local/include -I/usr/local/include/opencv    -g   -o CMakeFiles/senscopic.dir/src/dumpTool.cpp.o -c /home/fender/senscopic_sdk/src/dumpTool.cpp",
+  "file": "/home/fender/senscopic_sdk/src/dumpTool.cpp"
+},
+{
+  "directory": "/home/fender/senscopic_sdk",
+  "command": "/usr/bin/cc  -I/home/fender/senscopic_sdk/src -I/home/fender/senscopic_sdk/3rdparty/jsoncpp/include -I/usr/local/include -I/usr/local/include/opencv    -g   -o CMakeFiles/senscopic.dir/src/hid.c.o   -c /home/fender/senscopic_sdk/src/hid.c",
+  "file": "/home/fender/senscopic_sdk/src/hid.c"
+},
+{
+  "directory": "/home/fender/senscopic_sdk",
+  "command": "/usr/bin/c++   -I/home/fender/senscopic_sdk/src -I/home/fender/senscopic_sdk/3rdparty/jsoncpp/include -I/usr/local/include -I/usr/local/include/opencv    -g   -o CMakeFiles/senscopic.dir/src/uvc_interface.cpp.o -c /home/fender/senscopic_sdk/src/uvc_interface.cpp",
+  "file": "/home/fender/senscopic_sdk/src/uvc_interface.cpp"
+},
+{
+  "directory": "/home/fender/senscopic_sdk",
+  "command": "/usr/bin/c++   -I/home/fender/senscopic_sdk/src -I/home/fender/senscopic_sdk/3rdparty/jsoncpp/include -isystem /usr/local/include -isystem /usr/local/include/opencv    -g   -std=gnu++1z -o CMakeFiles/camtest.dir/camtest.cpp.o -c /home/fender/senscopic_sdk/camtest.cpp",
+  "file": "/home/fender/senscopic_sdk/camtest.cpp"
+}
+]
