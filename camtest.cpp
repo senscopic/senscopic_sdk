@@ -63,7 +63,9 @@ int main(void)
 	char exit_key = 27; // 27 is ESC
 	int delay = 25;  //@param delay Delay in milliseconds. 0 is the special value that means "forever".
 	bool show = true;
-	
+	int depth_max;
+	int depth_min;
+	int depth_mode;
 	while(show) {
 		imshow("Display frame", image);
 		// camera.ExecPython("/run/media/mmcblk0p1/config/test_print.py");
@@ -87,6 +89,12 @@ int main(void)
 				if (resolution_index >= CameraModule::Resolution_mode::RESOLUTION_MODE_NUM)
 					resolution_index = 0;
 				camera.SetResolutionMode((CameraModule::Resolution_mode)resolution_index);
+				break;
+			case '3':
+				depth_max = 2000; // mm
+				depth_min = 500;  // mm
+				depth_mode = 0;   // 0: disparity mode 1: depth mode
+				camera.DepthThreshold(depth_max, depth_min, depth_mode);
 				break;
 			case 'q':
 			case 'Q':

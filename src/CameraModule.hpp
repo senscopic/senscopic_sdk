@@ -180,6 +180,7 @@ public:
     virtual int GetFrameHeight() = 0;
     virtual void GetFrameSize(int &width, int &height) = 0;
     virtual void ExecPython(const char* filepath) = 0;
+    virtual void DepthThreshold(int max, int min, int mode) = 0;
     //============================================
 
     Mode GetMode(){

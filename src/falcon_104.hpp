@@ -100,6 +100,13 @@ public:
 		if (fd > 0)
 			close(fd);
 	}
+	void DepthThreshold(int max, int min, int mode) {
+		float baseline = GetCameraParam("baseline");
+		float focal_length = GetCameraParam("fx");
+		string cmd = "depth_threshold.py " + to_string(max) + " " + 
+				to_string(min) + " " + to_string(baseline) + " " + to_string(focal_length)+ " " + to_string(mode);
+		ExecPython(cmd.c_str());
+	}
 	uint64_t GetTimestamp(uint16_t const* Buffer)
 	{
 		return GetTimestamp_(Buffer);
@@ -1159,7 +1166,13 @@ public:
 			ExecPython4Self("imu.py off");
 		}
 	}
-
+	void DepthThreshold(int max, int min, int mode) {
+		float baseline = GetCameraParam("baseline");
+		float focal_length = GetCameraParam("fx");
+		string cmd = "depth_threshold.py " + to_string(max) + " " + 
+				to_string(min) + " " + to_string(baseline) + " " + to_string(focal_length)+ " " + to_string(mode);
+		ExecPython4Self(cmd.c_str());
+	}
 	void SetSensorConf(int index) {
 		if (index > sensor_conf_list.size()) {
 			printf("%d out of index of sensor config list\n", index);
