@@ -24,6 +24,8 @@ cd camera_module
 
 * press 2 : switch resolution VGA/HD
 
+* press 3 : enable depthThreshold
+
 * press q : ir pattern on
 
 * press w : ir pattern off
